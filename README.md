@@ -1,3 +1,4 @@
+
 # Sweet Shop Management System
 
 A full-stack **Sweet Shop Management System** developed as part of the **AI Kata Assessment**.  
@@ -130,68 +131,7 @@ Inventory rules:
   - Inventory restocking logic
 - Tests ensure correctness, stability, and maintainability
 
----
-🤖 My AI Usage
-🔧 AI Tools Used
-
-ChatGPT (OpenAI)
-
-🧠 How I Used AI
-
-I used ChatGPT as a learning and productivity assistant throughout the development process:
-
-To understand complex backend concepts such as JWT authentication, middleware, and role-based authorization.
-
-To design REST API endpoints according to the project specification.
-
-To learn and correctly apply Test-Driven Development (TDD) step by step, including writing meaningful test cases using Jest and Supertest.
-
-To debug errors such as CORS issues, ESLint errors, and library version mismatches (e.g., jwt-decode changes).
-
-To structure frontend architecture, including React Context, protected routes, and service layers.
-
-To refactor UI using Tailwind CSS without changing any business logic.
-
-To improve code readability and maintain clean Git commit history.
-
-## 🚀 How to Run the Project Locally
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/subrata-bauri/sweet-shop-management-system/
-cd Sweet-Shop-Management-System
-
----
-
-### 2️⃣ Backend Setup
-```bash
-cd backend
-npm install
-npm run dev
-```
-Backend runs on:
-http://localhost:5000
-----
-
-### 3️⃣ Frontend Setup
-```bash
-cd frontend
-npm install
-npm start
----
-Frontend runs on:
-http://localhost:3000
-
----
-### 🔑 Environment Variables
-Create a .env file in the backend directory:
-
-MONGO_URI=mongodb://127.0.0.1:27017/sweetshop
-MONGO_URI_TEST=mongodb://127.0.0.1:27017/sweetshop_test
-JWT_SECRET=your_secret_key
-PORT=5000
-
-## My AI Usage
+## 🤖 My AI Usage
 
 I used AI tools (ChatGPT) during the development of this project
 to assist with:
@@ -205,3 +145,63 @@ to assist with:
 AI helped accelerate development and improve code quality,
 but all logic, validation, and final decisions were reviewed
 and implemented by me to ensure correctness and originality.
+
+## 🚀 How to Run the Project Locally
+
+1️⃣ **Clone the repository**
+```bash
+git clone  https://github.com/subrata-bauri/sweet-shop-management-system/
+cd Sweet-Shop-Management-System
+```
+2️⃣ **Backend Setup**
+```bash
+cd backend
+npm install
+npm run dev
+```
+Backend runs on:
+```bash
+http://localhost:5000
+```
+
+3️⃣ **Frontend Setup**
+```bash
+cd frontend
+npm install
+npm start
+```
+Frontend runs on:
+```bash
+http://localhost:3000
+```
+## 🔑 Environment Variables
+Create a .env file in the backend directory:
+```bash
+MONGO_URI=mongodb://127.0.0.1:27017/sweetshop
+MONGO_URI_TEST=mongodb://127.0.0.1:27017/sweetshop_test
+JWT_SECRET=your_secret_key
+PORT=5000
+```
+## 🧪 Test Report
+### Backend Testing
+- Tools Used
+- Jest
+- Supertest
+- MongoDB Test Database
+- Test Coverage
+- User registration and login
+- JWT authentication
+- Role-based authorization
+- Sweet CRUD operations
+- Purchase & inventory management
+- Error and edge cases (out of stock, unauthorized access)
+#### Command
+```bash
+cd backend
+npm test
+```
+
+## Test Report
+<img align="center" src="https://github.com/subrata-bauri/sweet-shop-management-system/blob/main/test_report.png?raw=true">
+
+**✅ All backend tests passed successfully.**

@@ -111,7 +111,6 @@ router.post("/:id/purchase", authMiddleware, async (req, res) => {
 });
 
 router.post("/:id/restock", authMiddleware, async (req, res) => {
-
   if (req.user.role !== "admin") {
     return res.status(403).json({
       message: "Admin access required"

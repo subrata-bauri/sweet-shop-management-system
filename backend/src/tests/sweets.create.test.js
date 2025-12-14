@@ -47,6 +47,7 @@ describe("Sweets API - Create Sweet (Admin Only)", () => {
     expect(response.body.message).toBe("Admin access required");
   });
 
+  
   test("should allow sweet creation for admin user", async () => {
     // Register admin user
     await request(app)

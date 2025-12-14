@@ -43,7 +43,6 @@ describe("Sweets API - Create Sweet (Admin Only)", () => {
         price: 5,
         quantity: 20
       });
-
     expect(response.statusCode).toBe(403);
     expect(response.body.message).toBe("Admin access required");
   });

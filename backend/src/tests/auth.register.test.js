@@ -7,6 +7,7 @@ describe("Auth API - Register", () => {
     await mongoose.connect("mongodb://127.0.0.1:27017/sweetshop_test");
   });
 
+  
   afterAll(async () => {
     await mongoose.connection.db.dropDatabase();
     await mongoose.connection.close();

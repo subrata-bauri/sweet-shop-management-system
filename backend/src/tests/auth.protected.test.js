@@ -7,7 +7,6 @@ describe("Protected Route - JWT Authorization", () => {
 
   beforeAll(async () => {
     await mongoose.connect("mongodb://127.0.0.1:27017/sweetshop_test");
-
     await request(app)
       .post("/api/auth/register")
       .send({

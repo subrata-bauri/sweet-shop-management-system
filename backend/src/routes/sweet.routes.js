@@ -127,7 +127,6 @@ router.post("/:id/restock", authMiddleware, async (req, res) => {
   }
 
   const sweet = await Sweet.findById(id);
-
   if (!sweet) {
     return res.status(404).json({ message: "Sweet not found" });
   }

@@ -13,7 +13,6 @@ describe("Auth API - Register", () => {
   });
 
   test("should not allow duplicate email registration", async () => {
-
     await request(app)
       .post("/api/auth/register")
       .send({

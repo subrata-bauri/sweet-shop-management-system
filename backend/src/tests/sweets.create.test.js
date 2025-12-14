@@ -48,7 +48,6 @@ describe("Sweets API - Create Sweet (Admin Only)", () => {
   });
 
   test("should allow sweet creation for admin user", async () => {
-
     // Register admin user
     await request(app)
       .post("/api/auth/register")

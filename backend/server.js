@@ -18,6 +18,7 @@ connectDB();
 app.use("/api/auth", authRoutes);
 app.use("/api/sweets", sweetRoutes);
 
+
 app.get("/api/protected", authMiddleware, (req, res) => {
   return res.status(200).json({
     message: "Protected content"

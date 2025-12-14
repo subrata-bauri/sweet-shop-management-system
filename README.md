@@ -131,7 +131,28 @@ Inventory rules:
 - Tests ensure correctness, stability, and maintainability
 
 ---
+🤖 My AI Usage
+🔧 AI Tools Used
 
+ChatGPT (OpenAI)
+
+🧠 How I Used AI
+
+I used ChatGPT as a learning and productivity assistant throughout the development process:
+
+To understand complex backend concepts such as JWT authentication, middleware, and role-based authorization.
+
+To design REST API endpoints according to the project specification.
+
+To learn and correctly apply Test-Driven Development (TDD) step by step, including writing meaningful test cases using Jest and Supertest.
+
+To debug errors such as CORS issues, ESLint errors, and library version mismatches (e.g., jwt-decode changes).
+
+To structure frontend architecture, including React Context, protected routes, and service layers.
+
+To refactor UI using Tailwind CSS without changing any business logic.
+
+To improve code readability and maintain clean Git commit history.
 
 ## 🚀 How to Run the Project Locally
 

@@ -27,7 +27,21 @@ router.post("/", authMiddleware, async (req, res) => {
 });
 
 router.get("/", authMiddleware, async (req, res) => {
+  const { discount } = req.query;
+
   const sweets = await Sweet.find();
+
+  if (discount) {
+    const d = Number(discount);
+    const sweetsWithDiscount = sweets.map((s) => {
+      const obj = s.toObject();
+      obj.discountedPrice = obj.price - (obj.price * d) / 100;
+      return obj;
+    });
+
+    return res.status(200).json(sweetsWithDiscount);
+  }
+
   return res.status(200).json(sweets);
 });
 
